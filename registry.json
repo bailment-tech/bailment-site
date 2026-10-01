@@ -1,0 +1,62 @@
+{
+  "schema": "bailment.ai/registry/v1",
+  "_comment": "DEMO REGISTRY WITH DEMO KEYS. The two key pairs below were generated for this working demonstration and their private halves are embedded in the page source, so anyone can mint a certificate that this registry accepts. It shows the shape of the real thing: in production this file is the published, append-only registry, the private halves live under the 3-of-5 root, and nothing here is a trust anchor.",
+  "updated": "2026-09-21T01:15:58.000Z",
+  "approvedSigners": [
+    {
+      "id": "demo-attestation-service",
+      "role": "attestation-service",
+      "fingerprint": "7B85 3961 7630 61AB",
+      "spki": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEt6ZGDXumjls6Ld5EnjgJ3n4R57W_XIo7-VQJCv8b-hv7CYxJqtgMvehXQz_HugnJlDOxW0gvo8lp2Y521y5-XQ",
+      "firm": "Bailment attestation service (demo key)",
+      "name": "Bailment attestation service",
+      "signs": [
+        "certificate"
+      ],
+      "validFrom": "2026-01-01T00:00:00.000Z",
+      "validUntil": "2027-12-31T23:59:59.000Z"
+    },
+    {
+      "id": "demo-attorney-mohr",
+      "role": "attorney",
+      "fingerprint": "D408 F057 F718 76C2",
+      "spki": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE2taL90NN8ctbfzJhGxVeisUPb7lyIT6VePWOA7sLAxULixRitelCWqvsGN06dO_1BUdEcEriOyG4AnvNy2N32w",
+      "firm": "Bailment Law (demo key)",
+      "name": "Kevin G. Mohr, Esq.",
+      "barNumber": "Bar No. 123456",
+      "jurisdiction": "Washington",
+      "signs": [
+        "attestation"
+      ],
+      "validFrom": "2026-01-01T00:00:00.000Z",
+      "validUntil": "2027-12-31T23:59:59.000Z"
+    },
+    {
+      "id": "bailment-ai-attestation-service",
+      "role": "attestation-service",
+      "fingerprint": "0FE8 1D29 031F 7ABE",
+      "spki": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEjrK7JilTOdrX0SIjrTCEE-B-8TxdskfSZl_k8NMJetMRSttLZAGbqW9-gFeOKNEhimbSjU0jKWHMaB09efHehg",
+      "firm": "Bailment attestation service",
+      "name": "Bailment attestation service",
+      "signs": [
+        "certificate",
+        "attestation"
+      ],
+      "validFrom": "2026-09-21T00:00:00.000Z",
+      "validUntil": "2028-09-20T23:59:59.000Z",
+      "_note": "Live issuer key of the backend service. The private half never leaves backend/keys/."
+    }
+  ],
+  "approvedPipelines": [
+    {
+      "registryEntry": "bailee-pipeline/2026.9.3",
+      "approvedOn": "2026-09-03T00:00:00.000Z",
+      "withdrawnOn": null
+    },
+    {
+      "registryEntry": "bailee-pipeline/2026.8.1",
+      "approvedOn": "2026-08-01T00:00:00.000Z",
+      "withdrawnOn": "2026-09-03T00:00:00.000Z"
+    }
+  ]
+}

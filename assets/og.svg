@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Bailment — a certificate a court can check">
+  <defs>
+    <radialGradient id="haloA" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8CB7FF" stop-opacity=".22"/><stop offset="100%" stop-color="#8CB7FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="haloB" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3A86FF" stop-opacity=".18"/><stop offset="100%" stop-color="#3A86FF" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0H0V72" fill="none" stroke="#2A2F33" stroke-opacity=".5" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff" stop-opacity=".8"/><stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="gridmask"><rect width="1200" height="630" fill="url(#fade)"/></mask>
+  </defs>
+
+  <rect width="1200" height="630" fill="#05070D"/>
+  <rect width="1200" height="630" fill="url(#grid)" mask="url(#gridmask)"/>
+  <ellipse cx="150" cy="30" rx="560" ry="360" fill="url(#haloA)"/>
+  <ellipse cx="1080" cy="90" rx="520" ry="340" fill="url(#haloB)"/>
+
+  <g transform="translate(80,72)">
+    <rect x=".9" y=".9" width="42" height="42" rx="11" fill="none" stroke="#2A2F33"/>
+    <g transform="translate(6,6) scale(0.97)">
+      <path d="M8 21.5V10.5h6.4a3.1 3.1 0 0 1 0 6.2H8" fill="none" stroke="#F6F8FA" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M8 16.7h6.9a2.9 2.9 0 0 1 0 5.8H8" fill="none" stroke="#F6F8FA" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="22.6" cy="13.1" r="2.6" fill="none" stroke="#3A86FF" stroke-width="1.9"/>
+      <path d="M22.6 15.7v5.9M20.2 19.4h4.8" stroke="#3A86FF" stroke-width="1.9" stroke-linecap="round"/>
+    </g>
+    <text x="58" y="30" font-family="Poppins,system-ui,sans-serif" font-size="25" font-weight="500" fill="#F6F8FA" letter-spacing="-.5">Bailment</text>
+    <text x="215" y="29" font-family="'JetBrains Mono',monospace" font-size="14" fill="#3A86FF" letter-spacing="3.2">BAILEE</text>
+  </g>
+
+  <rect x="80" y="182" width="132" height="3" rx="1.5" fill="#3A86FF"/>
+  <text x="80" y="228" font-family="'JetBrains Mono',monospace" font-size="15" fill="#3A86FF" letter-spacing="4">VERIFIABLE AI-USE CERTIFICATION</text>
+
+  <text x="80" y="318" font-family="Poppins,system-ui,sans-serif" font-size="70" font-weight="600" fill="#F6F8FA" letter-spacing="-2.4">A certificate a court</text>
+  <text x="80" y="394" font-family="Poppins,system-ui,sans-serif" font-size="70" font-weight="600" fill="#F6F8FA" letter-spacing="-2.4">can check.</text>
+
+  <text x="80" y="448" font-family="Poppins,system-ui,sans-serif" font-size="23" font-weight="300" fill="#9BA7B4">On a private AI workspace the firm owns. The vendor holds nothing.</text>
+
+  <g font-family="'JetBrains Mono',monospace" font-size="14" letter-spacing="1.4">
+    <g transform="translate(80,506)">
+      <rect width="266" height="42" rx="21" fill="#0d121a" fill-opacity=".72" stroke="#2A2F33"/>
+      <circle cx="22" cy="21" r="3.5" fill="#3A86FF"/>
+      <text x="38" y="26" fill="#9BA7B4">NO CLIENT DOCUMENTS</text>
+    </g>
+    <g transform="translate(362,506)">
+      <rect width="222" height="42" rx="21" fill="#0d121a" fill-opacity=".72" stroke="#2A2F33"/>
+      <circle cx="22" cy="21" r="3.5" fill="#3A86FF"/>
+      <text x="38" y="26" fill="#9BA7B4">NO IDENTITIES</text>
+    </g>
+    <g transform="translate(600,506)">
+      <rect width="196" height="42" rx="21" fill="#0d121a" fill-opacity=".72" stroke="#2A2F33"/>
+      <circle cx="22" cy="21" r="3.5" fill="#3A86FF"/>
+      <text x="38" y="26" fill="#9BA7B4">NO VECTORS</text>
+    </g>
+  </g>
+
+  <g transform="translate(866,196)">
+    <rect width="254" height="240" rx="20" fill="#0d121a" fill-opacity=".8" stroke="#2A2F33"/>
+    <text x="24" y="40" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#9BA7B4" letter-spacing="2.6">CERTIFICATE OF AI USE</text>
+    <line x1="24" y1="56" x2="230" y2="56" stroke="#2A2F33"/>
+    <g stroke="#3A86FF" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M26 88l6 6 11-12"/><path d="M26 130l6 6 11-12"/><path d="M26 172l6 6 11-12"/><path d="M26 214l6 6 11-12"/>
+    </g>
+    <g font-family="Poppins,system-ui,sans-serif" font-size="14.5" fill="#F6F8FA">
+      <text x="58" y="95">Model and version</text>
+      <text x="58" y="137">Attorney adopted</text>
+      <text x="58" y="179">Citations verified</text>
+      <text x="58" y="221">No identifier sent</text>
+    </g>
+  </g>
+</svg>

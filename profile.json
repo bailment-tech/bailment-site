@@ -1,0 +1,35 @@
+{
+  "_comment": "Demo attorney profile. Fake credentials for a demonstration: the bar number is not real and the keys are published on purpose.",
+  "attorney": {
+    "name": "Kevin G. Mohr, Esq.",
+    "barNumber": "Bar No. 123456",
+    "jurisdiction": "Nevada",
+    "court": "Second Judicial District Court, Washoe County, Nevada",
+    "role": "Partner, Nevada Law",
+    "status": "Demo profile \u2014 credentials are fictitious"
+  },
+  "firm": {
+    "name": "Bailment Law",
+    "address": [
+      "1023 Taos Ranch Court",
+      "Reno, NV 89511",
+      "United States"
+    ],
+    "email": "admin@bailment.tech",
+    "phone": "845-587-4420",
+    "licence": "blf_lk_demo_bailment_law_free",
+    "registryEntry": "bailee-pipeline/2026.9.3",
+    "licenceNote": "Free public demo key. It opens matters and pays for certified filings on an appliance you run yourself. Printed on purpose: a key everyone holds proves nothing about who used it."
+  },
+  "keys": {
+    "id": "demo-attorney-mohr",
+    "fingerprint": "D408 F057 F718 76C2",
+    "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE2taL90NN8ctbfzJhGxVeisUPb7lyIT6VePWOA7sLAxULixRitelCWqvsGN06dO_1BUdEcEriOyG4AnvNy2N32w",
+    "note": "The public half is published in registry.json. A verifier reads it from there, never from this page."
+  },
+  "disclosure": {
+    "name": "Judge Washoe",
+    "email": "Judge@washoecourts.example",
+    "subjectPrefix": "Disclosure of AI use"
+  }
+}

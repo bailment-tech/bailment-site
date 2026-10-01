@@ -1,0 +1,28 @@
+/* Design tokens extracted live from https://www.ionglobal.ca (dark theme). Colors + fonts only. */
+:root{
+  --canvas:#05070D; --ink:#F6F8FA;
+  --brand-50:#E9F2FF; --brand-100:#D3E5FF; --brand-200:#B3D1FF; --brand-300:#8CB7FF;
+  --brand-400:#3A86FF; --brand-500:#2F74F2; --brand-600:#255FD8; --brand-700:#1E4DB5;
+  --brand-800:#2A2F33; --brand-900:#111316; --brand-950:#0B0F12;
+  --neutral-0:#FFFFFF; --neutral-900:#121b24; --neutral-950:#0d121a;
+  --accent:var(--brand-400); --accent-hover:var(--brand-300); --accent-active:var(--brand-500);
+  --accent-ring:color-mix(in srgb, var(--brand-400) 35%, transparent);
+  --accent-subtle:color-mix(in srgb, var(--brand-400) 14%, var(--neutral-950));
+  --bg-surface:var(--neutral-900);
+  --panel-bg:color-mix(in srgb, var(--neutral-950) 78%, transparent);
+  --chip-bg:color-mix(in srgb, var(--neutral-950) 72%, transparent);
+  --border-hairline:color-mix(in srgb, #2A2F33 50%, transparent);
+  --fg-muted:#9BA7B4;
+  --tint-ice:color-mix(in srgb, var(--brand-400) 30%, #60A5FA);
+  --tint-lime:color-mix(in srgb, var(--brand-400) 12%, #22C55E);
+  --tint-ember:color-mix(in srgb, var(--brand-400) 35%, #FF5A1F);
+  --tint-violet:color-mix(in srgb, var(--brand-400) 18%, #8B5CF6);
+  --fx-glow:color-mix(in srgb, var(--brand-300) 22%, transparent);
+  --fx-halo-a:color-mix(in srgb, var(--brand-300) 18%, transparent);
+  --fx-halo-b:color-mix(in srgb, var(--brand-400) 14%, transparent);
+  --font-body:Poppins,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  --font-heading:var(--font-body);
+  --font-mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+  --radius:14px; --radius-sm:10px; --radius-lg:22px;
+  --maxw:1180px;
+}

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bailee — self-check</title>
+<link rel="stylesheet" href="app.css">
+<style>
+  body{background:var(--canvas);color:var(--ink);font-family:var(--font-body);margin:0;padding:40px 24px}
+  main{max-width:900px;margin:0 auto}
+  h1{font-size:1.4rem;font-weight:600;margin:0 0 6px}
+  .sub{color:var(--fg-muted);font-size:.9rem;margin:0 0 24px}
+  #log{font-family:var(--font-mono);font-size:.8rem;line-height:1.9}
+  #log .g{display:block;margin-top:16px;color:var(--ink);letter-spacing:.08em;text-transform:uppercase;font-size:.72rem}
+  #log .p{color:var(--tint-lime)} #log .f{color:var(--tint-ember)} #log .n{color:var(--fg-muted)}
+  #log .d{color:var(--fg-muted)}
+  #total{margin-top:24px;font-size:1.1rem;font-family:var(--font-mono)}
+</style>
+</head>
+<body>
+<main>
+  <h1>Bailee self-check</h1>
+  <p class="sub">Real WebCrypto, running in this tab. Nothing is stubbed and nothing is fetched.
+  The same file runs headless with <code>node app/selftest.node.js</code>.</p>
+  <div id="log">running…</div>
+  <div id="total"></div>
+</main>
+<script src="crypto.js"></script>
+<script src="ui.js"></script>
+<script src="notarize.js"></script>
+<script src="certificate.js"></script>
+<script src="attestation.js"></script>
+<script src="protocol.js"></script>
+<script src="selftest.js"></script>
+<script>
+(function () {
+  var log = document.getElementById('log');
+  log.textContent = '';
+  var esc = function (s) { return String(s).replace(/[&<>]/g, function (c) {
+    return { '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]; }); };
+  if (!(window.crypto && window.crypto.subtle)) {
+    log.innerHTML = '<span class="f">crypto.subtle is unavailable in this context. '
+      + 'Open over http:// (see serve.bat) or use Chrome/Firefox.</span>';
+    return;
+  }
+  Bailee.selftest.run(function (name, ok, detail) {
+    var line = document.createElement('div');
+    if (ok === null) {
+      line.className = name ? 'g' : 'n';
+      line.innerHTML = detail ? '<span class="d">' + esc(name) + ': ' + esc(detail) + '</span>' : esc(name);
+    } else {
+      line.innerHTML = '<span class="' + (ok ? 'p' : 'f') + '">' + (ok ? 'PASS' : 'FAIL') + '</span> '
+        + esc(name) + (detail ? ' <span class="d">— ' + esc(detail) + '</span>' : '');
+    }
+    log.appendChild(line);
+  }).then(function (r) {
+    var t = document.getElementById('total');
+    t.className = r.fail ? 'f' : 'p';
+    t.style.color = r.fail ? 'var(--tint-ember)' : 'var(--tint-lime)';
+    t.textContent = r.pass + ' passed, ' + r.fail + ' failed';
+    document.title = (r.fail ? '✗ ' : '✓ ') + r.pass + '/' + (r.pass + r.fail) + ' — Bailee self-check';
+  });
+})();
+</script>
+</body>
+</html>

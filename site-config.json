@@ -1,0 +1,44 @@
+{
+  "_comment": "What an administrator can change on the public pages without editing HTML. Served free and keyless by GET /v1/site-config; written by PUT /admin/site-config; read by site/app/config.js. This file is also the static fallback, so a page opened from a file keeps working.",
+  "headline": "Keep Your A.I. Usage Secure and Verifiable",
+  "subline": "Courts want proof of how you used AI. Bailee makes a certificate anyone can check.",
+  "contactEmail": "admin@bailment.tech",
+  "demoBanner": {
+    "show": true,
+    "text": "demo"
+  },
+  "announcement": {
+    "show": false,
+    "text": ""
+  },
+  "maintenance": false,
+  "theme": {
+    "fontScale": 1.0,
+    "spacing": 1.0,
+    "lineHeight": 1.65,
+    "palette": {
+      "canvas": "#05070D",
+      "ink": "#F6F8FA",
+      "accent": "#3A86FF",
+      "surface": "#121b24",
+      "border": "#2A2F33",
+      "muted": "#9BA7B4"
+    }
+  },
+  "labels": {
+    "nav": {
+      "home": "Home"
+    },
+    "footer": {
+      "registry": "registry.json"
+    }
+  },
+  "features": {
+    "notarize": true,
+    "protocol": true,
+    "certificate": true,
+    "attestation": true,
+    "workplace": true
+  },
+  "updated": ""
+}
